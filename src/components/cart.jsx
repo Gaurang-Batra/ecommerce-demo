@@ -4,7 +4,7 @@ const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
-    fetch("https://webappbackend0987-ahd8gjagcuegecf3.canadacentral-01.azurewebsites.net/cart")
+    fetch("https://rgdemo1-f5c7f3awb6hvaqbm.canadacentral-01.azurewebsites.net/cart")
       .then(res => res.json())
       .then(data => setCartItems(data))
       .catch(err => console.error("Failed to load cart data:", err));
